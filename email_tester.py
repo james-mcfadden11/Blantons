@@ -22,7 +22,7 @@ email_body = "This is a test " + test_str + " more email body"
 email_content = MIMEText(email_body ,'html')
 email.attach(email_content)
 with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
-    server.login("blantonswebscraper@gmail.com", "Summer$2020")
+    server.login("blantonswebscraper@gmail.com", "")
     server.sendmail(sender, 'jamesmcfadden111@gmail.com', email.as_string())
 
 
